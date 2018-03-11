@@ -1,6 +1,6 @@
 User root
-Host 59.110.223.240
-HostName test
+Host test
+HostName 59.110.223.240
 Port 22
 StrictHostKeyChecking no
 IdentityFile ~/.ssh/id_rsa

@@ -11,7 +11,7 @@ before_install:
 - chmod 600 ~/.ssh/config
 script: true
 after_success:
-  - scp -r -o StrictHostKeyChecking=no ./app.js root@59.110.223.240:/root/test/
+  - scp -r -o StrictHostKeyChecking=no app.js root@59.110.223.240:/root/test/
 #- ssh root@59.110.223.240  "./travis_build"
 addons:
   -ssh_known_hosts: "59.110.223.240"
