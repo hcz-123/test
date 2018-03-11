@@ -10,10 +10,9 @@ before_install:
   - ssh-add ~/.ssh/id_rsa
   - scp .travis/ssh_config ~/.ssh/config
   - chmod 600 ~/.ssh/config
+script: true
 after_success:
   - scp -r -o StrictHostKeyChecking=no ./build webtest:/root/
 #- ssh root@59.110.223.240  "./travis_build"
 addons:
   -ssh_known_hosts: "59.110.223.240"
-
-script:true
