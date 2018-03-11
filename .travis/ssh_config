@@ -1,5 +1,5 @@
 User root
-Host webtest
+Host test
 HostName 59.110.223.240
 Port 22
 StrictHostKeyChecking no
